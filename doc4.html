@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <li> Escreva seu nome completo:</li>    
+    <input type="text" id="nome" required><br>
+    <li>Qual o seu sexo</li>
+    <input type="radio" id="masculino" name="sexo" value="masculino">
+    <label for="masculino">Masculino</label><br>
+    <input type="radio" id="feminino" name="sexo" value="feminino">
+    <label for="feminino">Feminino</label><br>
+    <input type="radio" id="outro" name="sexo" value="outro">
+    <label for="outro">Outro</label><br>
+    <form action="https://formspree.io/f/xanpbrwj"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+
+     <a href="index.html">Voltar</a>
+
+    
+</body>
+</html>

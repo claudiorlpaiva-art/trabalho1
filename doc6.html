@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora de soma</h1>
+    <label for="soma1">soma1:</label>
+    <input type="number" id="soma1"><br>
+    <label for="soma2">soma2:</label>
+    <input type="number" id="soma2"><br>
+    <button onclick="calcularsoma()">Calcular soma</button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularsoma() {
+            var soma1 = parseFloat(document.getElementById('soma1').value);
+            var soma2 = parseFloat(document.getElementById('soma2').value);
+            var resultado = soma1 + soma2;
+            document.getElementById('resultado').innerText = 'Resultado: ' + resultado;
+        }
+    </script>
+              
+    </script>
+    <a href="index.html">Voltar</a>
+</body>
+</html>
